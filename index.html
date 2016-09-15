@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Spicy Controller</title>
 </head>
-<body ng-app="spicyApp" ng-controller="spicyController">
+<body ng-app="spicyApp" ng-controller="SpicyController">
     <div>
-        <button ng-click="chillySpicy()">Chilli</button>
-        <button ng-click="jalapenoSpicy()">Jalapeno</button>
+        <input ng-model="customSpice">
+        <button ng-click="spicy('chilli')">Chilli</button>
+        <button ng-click="spicy(customSpice)">Custom Spice</button>
     </div>
     <p>The food is {{spice}} spicy!</p>
 </body>

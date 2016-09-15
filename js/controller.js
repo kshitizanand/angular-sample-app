@@ -1,12 +1,10 @@
 console.log("controller.js");
-spicyApp.controller('spicyController', ['$scope', function($scope){
+spicyApp.controller('SpicyController', ['$scope', function($scope){
     $scope.spice = "very";
-
-    $scope.chillySpicy = function() {
-        $scope.spice = "Chilly";
+    $scope.customSpice = "wasabi";
+    
+    $scope.spicy = function(spice) {
+        $scope.spice = spice;
     };
 
-    $scope.jalapenoSpicy = function() {
-        $scope.spice = "Jalapeno";
-    };
 }]);
